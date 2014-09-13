@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+</head>
+<body>
+	{% if url%}
+	<img src="{{url}}"/><br>
+	{% endif%}
+	
+	{% if result_memo%}
+	<a>"{{result_memo}}"</a>
+	{% endif%}
+
+	<form action="{{url_for("upload_db")}}" enctype="multipart/form-data" method = "POST">
+		<input type="text" name="text_get"><br>
+		<input type="file" name="grim"><br>
+    	<input type="submit" value="submit">
+    </form>
+</body>
+</html>

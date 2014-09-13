@@ -1,0 +1,19 @@
+Migrate는 큰 틀이 바뀔 때만 한 번씩!
+
+이에 비해 CRUD는 매일 매초 빈번하게 일어나고있다.
+
+CRUD와 MVC는 전혀 다름, 헷갈리지 말도록
+
+================================================
+Migrate 밑 Upgrade 방법
+
+1. cmd창을 켠다.
+
+2. cd 명령어로 해당 project까지 간 다음(mangaer.py가 존재하는 폴더까지)
+
+3. 다음 명령어를 실행한다.
+
+> python manager.py db migrate
+> python manager.py db upgrade
+================================================
+

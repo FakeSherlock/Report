@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweet for EveryOne</title>
+
+    <script src="/static/js/jquery-1.11.0.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/lightbox.min.js"></script>
+    <script src="/static/js/article.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/lightbox.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+</head>
+<body>
+    <p>
+        {% if comment %}
+        {{ comment }}
+        {% endif %}
+    </p>
+
+    <header>
+        <h2><i class="fa fa-twitter"></i> Tweet for EveryOne <i class="fa fa-heart"></i></h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, neque beatae deleniti nostrum autem
+            accusantium, dolore quisquam sunt quae placeat obcaecati animi iure aperiam sit excepturi nemo natus
+            laboriosam id.</p>
+
+        <div class="tweet-form">
+            <form action="{{ url_for("upload_db") }}" enctype="multipart/form-data" method="POST">
+                <textarea id="article" class="form-control" rows="3" name="memo"></textarea>
+                <span id="article-length">100</span><input type="file" name="photo">                
+                <input type="submit" value="Twit!" class="btn btn-lg btn-info mytwit">
+            </form>
+        </div>
+    </header>
+
+    <div id="twit-list">
+        {% for items in all_list %}
+        <div class="item">
+            <a href="show/{{ items.key() }}" data-lightbox="my_twit" data-title="{{ items.memo }}">
+                <img src="show/{{ items.key() }}">
+            </a>
+            <span>{{ items.memo }}</span>
+            
+            <p><small>{{ items.date }}</small></p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

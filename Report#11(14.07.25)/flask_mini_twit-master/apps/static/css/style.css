@@ -1,0 +1,99 @@
+body {
+	text-align: center;
+	margin: 0;
+	font-family: "Montserrat", "Helvetica";
+	background-color: #C0DEED;
+}
+
+.fb-like {
+	float: right;
+}
+
+header {
+    width : 100%;
+	padding: 50px;
+	margin-bottom: 50px;
+	background-color: #f7f7f7;
+}
+
+header h1 {
+	font-size: 4.5em;
+	margin: 0;
+	font-weight: bold;
+	clear: both;
+}
+
+.tweet-form {
+	width: 500px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.mytwit {
+	margin-top: 30px;
+}
+
+p {
+	width: 400px;
+	margin: auto;
+	font-weight: bold;
+	color: #777;
+}
+
+header p {
+	margin-top: 50px;
+}
+
+h2 {
+	font-size: 2.5em;
+	margin: 0 0 30px 0;
+	color: #e67e39;
+	font-weight: bold;
+}
+
+h3 {
+	margin-top: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#twit-list {
+	width: 500px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+#twit-list div {
+	min-height: 100px;
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+#twit-list div img {
+	width: 100px;
+	float: left;
+	border-radius: 3px;
+	border: 3px solid #C0DEED;
+}
+
+#twit-list div img:hover {
+	border: 3px solid #4ae;
+}
+
+#twit-list div span {
+	max-width: 350px;
+    	text-align: left;
+    	padding: 5px;
+	font-weight: bold;
+}
+
+small {
+    	text-align: left;
+	margin-left: 5px;
+	color : #b1b1b1;
+}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block contents %}
+    <div class="llArticleDetail">
+        <h1>글 상세보기</h1>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">제목 : {{ article.title }} / 작성자 : {{ article.author }} / <span class="float-right">{{ article.date_created.strftime('%Y-%m-%d %H:%M:%S') }}</span></h3>
+            </div>
+            <div class="panel-body">
+                {{ article.content|safe }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

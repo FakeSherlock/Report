@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block contents %}
+    <div class="llArticleCreate">
+        <form role="form" method="post">
+            <div class="alert alert-warning alert" role="alert">
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <strong>경고!</strong> 댓글이 완전히 삭제되니, 다시 한번 확인하시기 바랍니다.
+                <input type="hidden" name="comment_id" value="{{ comment_id }}">
+                <br></br>
+                <label for="comment_password">비밀번호 입력</label>
+                <br></br>
+                <input type="text" name="password" id="comment_password" class="form-control" placeholder="비밀번호를 입력하세요."/>
+                <br></br>
+                <button type="submit" class="btn btn-danger">댓글삭제</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

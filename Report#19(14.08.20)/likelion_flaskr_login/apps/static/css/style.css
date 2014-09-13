@@ -1,0 +1,44 @@
+.no-list {
+    padding: 10px;
+    text-align: center;
+}
+
+.float-right {
+    float: right;
+}
+
+.bottomButtons {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.llCommentList {
+    margin: 10px 0 0 0;
+}
+
+.llArticleCategories {
+    margin: 20px 0 30px 0;
+}
+
+.article-box {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #d9534f;
+}
+.no-updown-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.small-left-indent {
+    margin-left: 4px;
+}
+
